@@ -1,0 +1,17 @@
+spring:
+  cloud:
+    gateway:
+      mvc:
+        routes:
+          - id: google_route
+            uri: https://www.google.com
+            predicates:
+              - path=/go/**
+            filters:
+              StripPrefix=1
+          - id: salesforce_route
+            uri: https://www.salesforce.com
+            predicates:
+              - path=/sf/**
+            filters:
+              StripPrefix=1

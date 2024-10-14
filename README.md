@@ -6,3 +6,6 @@ docker build -t your-app-name .
 
 How to run the docker image
 docker run -p 5555:8090 your-app-name
+
+swagger page
+http://localhost:8080/swagger-ui/index.html
